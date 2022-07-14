@@ -1,0 +1,44 @@
+﻿@using TestRSD.Models.ViewModels
+@model AcceptVM
+
+<link href="~/css/Rsdstyles.css" rel="stylesheet">
+    <link href="~/css/RsdMedia.css" rel="stylesheet">
+
+<div  style="
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;background-image: url('/images/hero_2.jpg');">
+        <form  asp-action="Acceptance" asp-controller="MedicineOperationsServices">
+            <div class="title">
+                <h3><i class="fa-solid fa-pen-to-square"></i>القبول</h3>
+            </div>
+            <div class="message">
+                <p><i class="fa-solid fa-circle-info"></i>بعد اضافة الوحدة الي قائمة, يرجي النقر علي زر (ادراج) </p>
+            </div>
+            <section>
+                <div class="title">
+                    <h3><i class="fa-brands fa-buffer"></i>معلومات الوحدة</h3>
+                </div>
+                <div class="fields">
+                    <input type="file" accept=".csv">
+                    <label asp-for="Attach">Form File (Example.csv)<i class="fa-solid fa-paperclip"></i></label>
+                    <input asp-for="Datamatrex" type="text" placeholder="داتاماتريكس">
+                    <input asp-for="NumBand" type="number" placeholder="رقم بند التجارة العالمي (*)" required>
+                    <input asp-for="NumTaslsl" type="number" placeholder="رقم التسلسلي (*)" required>
+                    <input asp-for="NumDofaa" type="number" placeholder="رقم الدفعة (*)" required>
+                    <div>
+                        <p>تاريخ انتهاء الصلاحية (*)</p>
+                        <input asp-for="Date" type="text" style="width: 100%;direction: ltr;" placeholder="mm/dd/yyyy"
+                               onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+                    </div>
+                </div>
+                <div class="signature">
+                    <h3>رقم بند التجارة العالمي</h3>
+                    <h3>الرقم التسلسلي</h3>
+                    <h3>رقم الدفعة</h3>
+                    <h3>تاريخ انتهاء الصلاحية</h3>
+                </div>
+            </section>
+            <button><i class="fa-solid fa-plus"></i>إدراج</button>
+        </form>
+    </div>

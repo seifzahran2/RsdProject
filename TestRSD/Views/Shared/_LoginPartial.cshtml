@@ -1,0 +1,28 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+<form method="post" id="logoutForm" asp-controller="Account">
+@if (SignInManager.IsSignedIn(User))
+{
+    @if(User.IsInRole("sa7pMasla7a"))
+    {
+       <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block" style="margin-top:revert;">
+       <li class="active"><a asp-action="Index" asp-controller="Home"><span>الصفحة الرئيسيه</span></a></li>
+       <li class="active"><a asp-action="Acceptance" asp-controller="MedicineOperationsServices"><span>القبول</span></a></li>
+       </ul> 
+    }
+}
+else
+{
+    <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block" style="margin-top:revert;">
+       <li class="active"><a asp-action="Index" asp-controller="Home"><span>الصفحة الرئيسيه</span></a></li>
+       <li class="has-children">
+           <a  asp-action="Login" asp-controller="Account" class="login-icon" style="background-color: #06578d;width: 45px;border-radius: 21px;">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                     <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                 </svg>
+           </a>
+       </li>
+    </ul>
+}
+</form>

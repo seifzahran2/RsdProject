@@ -1,0 +1,30 @@
+﻿m
+@{
+    ViewData["Title"] = "Login";
+}
+@using TestRSD.Models.ViewModels
+@model RegisterVM
+	<!-- main -->
+	<div class="main-w3layouts wrapper" style="
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;background-image: url('/images/hero_2.jpg');">
+		<div class="main-agileinfo">
+			<div class="agileits-top" style="margin-top: 21.8%;">
+				<form asp-controller="Account" asp-action="Login" method="post">
+					<div asp-validation-summary="All" style="text-align:right;color:#06578d;margin-right: 6%;"></div>
+					<input asp-for="Email" class="text" type="email"  placeholder="البريد الالكتروني" required="" style="text-align:right">
+					<input asp-for="Password" class="text email" type="password"  placeholder="كلمة السر" required="" style="text-align:right">
+					<input asp-for="UserCode" class="text" type="text"  placeholder="كود المستخدم" required="" style="text-align:right">
+					<input asp-for="CompanyCode" class="text w3lpass" type="text"  placeholder="كود الشركه" required="" style="text-align:right">
+					
+					<input type="submit" value="تسجيل الدخول">
+				</form>
+				<p>ليس لديك حساب؟<a asp-action="Register" asp-controller="Account"> تسجيل</a></p>
+			</div>
+		</div>
+		<!-- copyright -->
+		
+	</div>
+
+

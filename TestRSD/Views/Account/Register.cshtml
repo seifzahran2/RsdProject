@@ -1,0 +1,36 @@
+﻿@using TestRSD.Models.ViewModels
+@{
+    ViewData["Title"] = "Register";
+}
+@model RegisterVM
+<!-- main -->
+	<div class="main-w3layouts wrapper" style="
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;background-image: url('/images/hero_2.jpg');">
+		<div class="main-agileinfo">
+			<div class="agileits-top" style="margin-top: 16%;">
+				<form asp-action="Register" asp-controller="Account" method="post" >
+					<div asp-validation-summary="All"  style="text-align:right;color:#06578d;margin-right: 6%;"></div>
+					<input class="text email mb-1" type="email" asp-for="Email" placeholder="البريد الالكتروني" required="" style="text-align:right">
+					<input class="text mb-1" type="text" asp-for="UserCode" placeholder="كود المستخدم" required="" style="text-align:right">
+					<input class="text mb-1" type="password" asp-for="Password" placeholder="كلمة السر" required="" style="text-align:right">
+					<input class="text mb-1" type="password" asp-for="ConfPassword" placeholder="تأكيد كلمة السر" required="" style="text-align:right">
+					<input class="text w3lpass mb-1" type="text" asp-for="Masla7aManageCode" placeholder="كود ادارة المصلحه" required="" style="text-align:right">
+					<input class="text mb-1" type="password" asp-for="Masla7aCode" placeholder="كلمة سر ادارة المصلحه" required="" style="text-align:right">
+					<input class="text mb-1 " type="text" asp-for="OperationsManageCode" placeholder="كود ادارة العمليات" required="" style="text-align:right">
+					<input class="text mb-1" type="text" asp-for="CompanyCode" placeholder="كود الشركة" required="" style="text-align:right">
+					<input class="text mb-1" type="password" asp-for="OperationsManagePass" placeholder="كلمة سر ادارة العمليات" required="" style="text-align:right">
+					
+					<input type="submit" value="تسجيل">
+				</form>
+				<p>لديك حساب بالفعل؟ <a asp-action="Login" asp-controller="Account"> تسجيل الدخول</a></p>
+			</div>
+		</div>
+		<!-- copyright -->
+		
+		<!-- //copyright -->
+		
+	</div>
+	<!-- //main -->
+

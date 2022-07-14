@@ -1,0 +1,34 @@
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (max-width:780px) {
+    form section:nth-child(4) input:nth-child(3) {
+        grid-column: span 1;
+    }
+    section .fields {
+        display: flex;
+        flex-direction: column;
+ 
+    }
+    form section:nth-child(4) label {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
