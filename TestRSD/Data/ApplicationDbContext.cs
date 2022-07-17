@@ -30,6 +30,13 @@ namespace TestRSD.Data
 
 
         public DbSet<Accept> Accepts { get; set; }
-        
+        public DbSet<DrugSell> drugSells { get; set; }
+        public DbSet<DeactivateUnit> deactivateUnits { get; set; }
+        public DbSet<DeactivationCancel> deactivationCancels { get; set; }
+        public DbSet<DrugSellCancle> drugSellCancles { get; set; }
+        public DbSet<Return> returns { get; set; }
+        public DbSet<Transfer> transfers { get; set; }
+        public DbSet<TransferCancle> transferCancles { get; set; }
+
     }
 }

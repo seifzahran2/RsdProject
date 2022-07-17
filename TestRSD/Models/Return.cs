@@ -1,26 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace RsdProject.Models.ViewModel
+namespace RsdProject.Models
 {
-    public class DisableUnitVM
+    public class Return
     {
-        public string TReson { get; set; }
-
-        public string Explain { get; set; }
         
+        public int Id { get; set; }
+        [Required]
+        public string GlobalNum { get; set; }
         public string Attach { get; set; }
-
+        [Required]
         public string Datamatrex { get; set; }
-
+        [Required]
         public int NumBand { get; set; }
-    
+        [Required]
         public int NumTaslsl { get; set; }
-    
+        [Required]
         public int NumDofaa { get; set; }
-       
+        [Required]
         public DateTime Date { get; set; }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cGWRAJZMyVTnkrozkqaVhpMZimc2ci+lxZF5CYyRiVTWFACEpr3S7sQhy/mooi/5lHg/VHlzEGIwRVN60A9nTA==",
+  "dgSpecHash": "Y5tIkK7gCm+WHKjwv9Au7ifyo7UPCSZLsPgAnhguY0LXTi9YmNhMeK8HWbsc6jDREFlqSpuS0E3CoIdqdeNFLA==",
   "success": true,
-  "projectFilePath": "E:\\Testing\\TestRSD\\TestRSD\\TestRSD.csproj",
+  "projectFilePath": "E:\\Repos\\RsdProj\\TestRSD\\TestRSD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\seifz\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\seifz\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

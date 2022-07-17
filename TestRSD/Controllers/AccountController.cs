@@ -95,15 +95,12 @@ namespace TestRSD.Controllers
 
         }
 
-
-
-        //[HttpPost]
-        //[Route("Logout")]
-        //public async Task<IActionResult> Logout()
-        //{
-        //    await userService.LogoutAsync();
-        //    return Ok("تم تسجيل الخروج");
-        //}
+        [HttpPost]
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Login", "Account");
+        }
 
     }
 }

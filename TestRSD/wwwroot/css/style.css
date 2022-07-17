@@ -65,7 +65,7 @@ a {
         background-color: white;
         border-radius: 30px;
         display: inline-block;
-        padding: 5px 20px;
+        padding: 5px 8px;
     }
     .site-navbar .site-navigation .site-menu a {
       text-decoration: none !important;
@@ -324,4 +324,420 @@ a {
         .site-mobile-menu .site-nav-wrap[data-class="social"] > li:first-child a {
           padding-left: 15px !important; }
 
+/*ÕÝÍÇÊ ÇáÚãáíÇÊ
+*/
+.kobol {
+    max-width: 700px;
+    width: 100%;
+    padding: 30px 30px;
+    margin-top: 1%;
+    border-radius: 25px;
+    background: linear-gradient(135deg,#b3d7ff0d,white);
+}
 
+.FinishDate {
+    font-size: 0.9em;
+    color: #fff;
+    font-weight: 100;
+    width: 94.5%;
+    display: block;
+    border: none;
+    padding: 0.8em;
+    border: solid 1px rgba(255, 255, 255, 0.37);
+    -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #fff 4%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #fff 4%);
+    background-position: -800px 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Sdetails
+{
+    color:white
+}
+
+.SAddress {
+    margin-bottom: 4%;
+    text-align: right;
+    background-color: #005482;
+    border-color: white;
+    border-radius: 12px;
+    color: white;
+    width:95%
+}
+.kobolSpan {
+    margin-right: 1%;
+    font-size: 2rem;
+}
+.kobolSpanI {
+    margin-bottom: 3%;
+    margin-right: 3%;
+}
+
+.operInputs {
+    text-align: right;
+    font-size: 0.9em;
+    color: #fff;
+    font-weight: 100;
+    width: 94.5%;
+    display: block;
+    border: none;
+    padding: 0.8em;
+    border: solid 1px rgb(0 84 130);
+    -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #fff 4%);
+    background: linear-gradient(92deg,#d5e9e7,#ffffff00);
+    background-position: -800px 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #005482;
+    font-family: 'Roboto', sans-serif;
+}
+
+.operInputs::placeholder {
+    color:#005482
+}
+
+.Sbutton
+{
+    text-align:center
+}
+
+.Sbutton button {
+    font-weight: 900;
+    color: #006bbd;
+    background: white;
+    outline: none;
+    border: 1px solid #006bbd;
+    cursor: pointer;
+    padding: 0.5em;
+    -webkit-appearance: none;
+    width: 30%;
+    margin-top: 1.8em;
+    text-align: right;
+    border-radius: 15px;
+}
+.FormFile {
+    text-align: left
+}
+.DateDiv {
+    text-align: right;
+}
+.DateLable {
+    padding-right: 3.8em;
+    color: #005482;
+}
+
+.m3ayyer {
+    max-width: 700px;
+    width: 100%;
+    padding: 30px 30px;
+    margin-top: 4%;
+    border-radius: 25px;
+    background: linear-gradient(92deg,#d5e9e7,white);
+    height:96.5%
+}
+
+    .m3ayyer input {
+        margin-bottom: 27px;
+        text-align: right;
+        font-size: 0.9em;
+        color: #fff;
+        font-weight: 100;
+        width: 94.5%;
+        display: block;
+        border: none;
+        padding: 0.8em;
+        border: solid 1px rgb(0 84 130);
+        -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+        transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #fff 4%);
+        background: linear-gradient(92deg,#d5e9e7,white);
+        background-position: -800px 0;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        color: #005482;
+        font-family: 'Roboto', sans-serif;
+    }
+.m3ayyer input::placeholder {
+    color:#005482
+}
+
+    .m3ayyer select {
+        margin-bottom: 27px;
+        text-align: right;
+        font-size: 0.9em;
+        color: #fff;
+        font-weight: 100;
+        width: 94.5%;
+        display: block;
+        border: none;
+        padding: 0.8em;
+        border: solid 1px rgb(0 84 130);
+        -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+        transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #fff 4%);
+        background: linear-gradient(92deg,#d5e9e7,white);
+        background-position: -800px 0;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        color: #005482;
+        font-family: 'Roboto', sans-serif;
+    }
+.m3ayyer select::placeholder {
+    color:#005482
+}
+
+.drugSell {
+    margin-top: 3rem;
+    margin-bottom: 2.4rem;
+}
+.Address {
+    text-align: right;
+    background-color: white;
+    color: #005482;
+    padding-bottom: 1%;
+    margin-top: 7%;
+    border-radius: 15px;
+    letter-spacing: normal;
+    padding-right: 2%;
+}
+
+.mainProj {
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('/images/hero_2.jpg');
+}
+
+.AddressKobol {
+    width: 45%;
+    margin-left: 28%;
+}
+.HAddress {
+    text-align: right;
+    background-color: white;
+    color: #005482;
+    padding-bottom: 1%;
+    margin-top: 10%;
+    border-radius: 15px;
+    letter-spacing: normal;
+    padding-right: 2%;
+}
+
+.DSell {
+    width: 100%;
+    padding: 30px 30px;
+    margin-top: 4%;
+    border-radius: 25px;
+    background: linear-gradient(135deg,#b3d7ff,white);
+}
+
+
+.DrugCancle {
+    width: 100%;
+    padding: 30px 30px;
+    margin-top: 4%;
+    border-radius: 25px;
+    background: linear-gradient(92deg,#d5e9e7,white);
+    height:79%
+}
+
+    .DrugCancle input {
+        margin-bottom: 27px;
+        text-align: right;
+        font-size: 0.9em;
+        color: #fff;
+        font-weight: 100;
+        width: 94.5%;
+        display: block;
+        border: none;
+        padding: 0.8em;
+        border: solid 1px rgb(0 84 130);
+        -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+        transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #fff 4%);
+        background: linear-gradient(92deg,#d5e9e7,#ffffff00);
+        background-position: -800px 0;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        color: #005482;
+        font-family: 'Roboto', sans-serif;
+    }
+.DrugCancle input::placeholder {
+    color:#005482
+}
+
+    .DrugCancle select {
+        margin-bottom: 27px;
+        text-align: right;
+        font-size: 0.9em;
+        color: #fff;
+        font-weight: 100;
+        width: 94.5%;
+        display: block;
+        border: none;
+        padding: 0.8em;
+        border: solid 1px rgb(0 84 130);
+        -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+        transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #fff 4%);
+        background: linear-gradient(92deg,#d5e9e7,#ffffff00);
+        background-position: -800px 0;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        color: #005482;
+        font-family: 'Roboto', sans-serif;
+    }
+.DrugCancle select::placeholder {
+    color:#005482
+}
+
+.DrobTest a {
+    text-decoration: none;
+}
+
+.DrobTest nav {
+    font-family: monospace;
+}
+
+.DrobTest ul {
+    background: white;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.DrobTest li {
+    color: #06578d;
+    background: white;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+  
+.DrobTest li a {
+  color: #fff;
+}
+
+.DrobTest li:hover,
+.DrobTest li:focus-within {
+  background: #06578d;
+  color:white;
+  cursor: pointer;
+}
+
+.DrobTest li:focus-within a {
+  outline: none;
+}
+
+.DrobTest ul li ul {
+    background: white;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+
+}
+
+.DrobTest ul li:hover > ul,
+.DrobTest ul li:focus-within > ul,
+.DrobTest ul li ul:hover,
+.DrobTest ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+.DrobTest ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+.DrobTest{
+    display:inline
+}
+
+.tog {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    height: 45rem;
+    width: 250px;
+    position: absolute;
+    background: #06578d;
+    z-index:1;
+    transition:.5s ease;
+    transform:translateX(-250px);
+}
+.tog .head{
+    background:white;
+    height:7rem
+}
+
+.tog ul
+{
+    width:100%;
+    list-style:none;
+    text-align:right;
+}
+
+.tog ul li{
+    display:block;
+    width:100%;
+}
+
+.tog ul li a{
+    color:white;
+    padding:15px 10px;
+    text-decoration:none;
+    display:block;
+    font-size:20px;
+    position:relative;
+    transition:.3s;
+    overflow:hidden;
+    text-transform:capitalize
+}
+
+.tog ul li:hover a
+{
+    background:white;
+    color:#06578d;
+}
+
+.sty input{
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+
+}
+
+.sty .labsp {
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    font-size: 25px;
+    border-radius: 3px;
+    color: white;
+    padding: 3px 8px;
+    cursor: pointer;
+    background: #000
+}
+
+#bars
+{
+    background:red
+}

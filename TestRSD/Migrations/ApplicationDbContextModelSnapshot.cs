@@ -190,6 +190,264 @@ namespace TestRSD.Migrations
                     b.ToTable("Accepts");
                 });
 
+            modelBuilder.Entity("RsdProject.Models.DeactivateUnit", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Attach")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Datamatrex")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Explain")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("NumBand")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NumDofaa")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NumTaslsl")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TReson")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("deactivateUnits");
+                });
+
+            modelBuilder.Entity("RsdProject.Models.DeactivationCancel", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Attach")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Datamatrex")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("NumBand")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NumDofaa")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NumTaslsl")
+                        .HasColumnType("int");
+
+                    b.HasKey("id");
+
+                    b.ToTable("deactivationCancels");
+                });
+
+            modelBuilder.Entity("RsdProject.Models.DrugSell", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Attach")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Datamatrex")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("Date2")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Doctor")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("NumBand")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NumDofaa")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NumTaslsl")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Pationat")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TypeSall")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("WasfaNum")
+                        .HasColumnType("int");
+
+                    b.HasKey("id");
+
+                    b.ToTable("drugSells");
+                });
+
+            modelBuilder.Entity("RsdProject.Models.DrugSellCancle", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Attach")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Datamatrex")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("GlobalNum")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("NumBand")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NumDofaa")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NumTaslsl")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TypeSall")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("WasfaNum")
+                        .HasColumnType("int");
+
+                    b.HasKey("id");
+
+                    b.ToTable("drugSellCancles");
+                });
+
+            modelBuilder.Entity("RsdProject.Models.Return", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Attach")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Datamatrex")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("GlobalNum")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("NumBand")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NumDofaa")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NumTaslsl")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("returns");
+                });
+
+            modelBuilder.Entity("RsdProject.Models.Transfer", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Attach")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Datamatrex")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("GlobalNum")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("NumBand")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NumDofaa")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NumTaslsl")
+                        .HasColumnType("int");
+
+                    b.HasKey("id");
+
+                    b.ToTable("transfers");
+                });
+
+            modelBuilder.Entity("RsdProject.Models.TransferCancle", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Attach")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Datamatrex")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("NumBand")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NumDofaa")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NumTaslsl")
+                        .HasColumnType("int");
+
+                    b.HasKey("id");
+
+                    b.ToTable("transferCancles");
+                });
+
             modelBuilder.Entity("TestRSD.Models.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")

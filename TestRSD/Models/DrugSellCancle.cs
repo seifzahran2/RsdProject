@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace RsdProject.Models
 {
-    public class DisableUnit
+    public class DrugSellCancle
     {
-        public int id { get; set; }
-        [Required]
-        public string TReson { get; set; }
 
-        public string Explain{ get; set; }
-             
+        public int id { get; set; }
+       
+        public string GlobalNum { get; set; }
+        public string TypeSall { get; set; }
+        [Required(ErrorMessage = "تاكد من ادخال رقم الوصفه")]
+        public int WasfaNum { get; set; }
+       
         public string Attach { get; set; }
         [Required]
         public string Datamatrex { get; set; }

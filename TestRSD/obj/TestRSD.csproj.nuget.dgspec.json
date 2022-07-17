@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Testing\\TestRSD\\TestRSD\\TestRSD.csproj": {}
+    "E:\\Repos\\RsdProj\\TestRSD\\TestRSD.csproj": {}
   },
   "projects": {
-    "E:\\Testing\\TestRSD\\TestRSD\\TestRSD.csproj": {
+    "E:\\Repos\\RsdProj\\TestRSD\\TestRSD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Testing\\TestRSD\\TestRSD\\TestRSD.csproj",
+        "projectUniqueName": "E:\\Repos\\RsdProj\\TestRSD\\TestRSD.csproj",
         "projectName": "TestRSD",
-        "projectPath": "E:\\Testing\\TestRSD\\TestRSD\\TestRSD.csproj",
+        "projectPath": "E:\\Repos\\RsdProj\\TestRSD\\TestRSD.csproj",
         "packagesPath": "C:\\Users\\seifz\\.nuget\\packages\\",
-        "outputPath": "E:\\Testing\\TestRSD\\TestRSD\\obj\\",
+        "outputPath": "E:\\Repos\\RsdProj\\TestRSD\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,28 +1,56 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @inject SignInManager<ApplicationUser> SignInManager
 @inject UserManager<ApplicationUser> UserManager
-<form method="post" id="logoutForm" asp-controller="Account">
+<form method="post" id="LogoutForm" asp-controller="Account" asp-action="Logout">
 @if (SignInManager.IsSignedIn(User))
 {
     @if(User.IsInRole("sa7pMasla7a"))
     {
-       <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block" style="margin-top:revert;">
-       <li class="active"><a asp-action="Index" asp-controller="Home"><span>الصفحة الرئيسيه</span></a></li>
-       <li class="active"><a asp-action="Acceptance" asp-controller="MedicineOperationsServices"><span>القبول</span></a></li>
-       </ul> 
+          <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block" style="margin-top:revert;">
+                 <li class="active"><a asp-action="Index" asp-controller="Home"><span>الصفحة الرئيسيه</span></a></li>
+                 <li class="active"><a asp-action="DeactivationCancel" asp-controller="MedicineOperationsServices"><span>الغاء عملية التعطيل</span></a></li>
+                 <li class="active"><a asp-action="DeactivateUnit" asp-controller="MedicineOperationsServices"><span>تعطيل الوحدة</span></a></li>
+                 <li class="active"><a asp-action="TransferCancel" asp-controller="MedicineOperationsServices"><span>الغاء النقل</span></a></li>
+                 <li class="active"><a asp-action="Transfer" asp-controller="MedicineOperationsServices"><span>النقل</span></a></li>
+                 <li class="active"><a asp-action="Return" asp-controller="MedicineOperationsServices"><span>الإرجاع</span></a></li>
+                 <li class="active"><a asp-action="Acceptance" asp-controller="MedicineOperationsServices"><span>القبول</span></a></li>
+                 <li class="active"><a asp-action="DrugsSellCancle" asp-controller="MedicineOperationsServices"><span>الغاء بيع الدواء</span></a></li>
+                 <li class="active"><a asp-action="DrugsSell" asp-controller="MedicineOperationsServices"><span>بيع الدواء</span></a></li>             
+                 <li class="active"><a  href="javascript:document.getElementById('LogoutForm').submit()"><span>تسجيل الخروج</span></a></li>
+                </ul>
+           
     }
 }
 else
 {
-    <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block" style="margin-top:revert;">
-       <li class="active"><a asp-action="Index" asp-controller="Home"><span>الصفحة الرئيسيه</span></a></li>
-       <li class="has-children">
-           <a  asp-action="Login" asp-controller="Account" class="login-icon" style="background-color: #06578d;width: 45px;border-radius: 21px;">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                     <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                 </svg>
-           </a>
-       </li>
-    </ul>
+      <div class="container">
+        <div class="row " style="margin-right: -222px;">
+          
+          <div class="col-11 col-xl-2" style="max-width: 9.66667%;">
+            <h1 class="mb-0 site-logo"><a asp-action="Index" asp-controller="Home" class="text-white mb-0"><img style="height: 70px;" src="~/images/logo.jpg"></a></h1>
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block" >
+            <nav class="site-navigation position-relative text-right" role="navigation" >
+                
+                 <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block" style="margin-top:revert;">
+                     <li class="active"><a asp-action="Index" asp-controller="Home"><span>الصفحة الرئيسيه</span></a></li>
+                     <li class="has-children">
+                         <a  asp-action="Login" asp-controller="Account" class="login-icon" style="background-color: #06578d;width: 45px;border-radius: 21px;">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                   <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                               </svg>
+                         </a>
+                     </li>
+                  </ul>           
+            </nav>
+          </div>
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+          </div>
+
+        </div>      
+
+    
+    
 }
 </form>
